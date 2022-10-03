@@ -2,9 +2,9 @@
 ## fall-22-mp1-work
 
 
-### Last Name:  
-### First Name: 
-### GitHub Username: 
+### Last Name:  Chen
+### First Name: Boxuan
+### GitHub Username: giao193
 
 ---
 #### General Workflow: 
