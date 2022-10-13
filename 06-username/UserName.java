@@ -12,11 +12,17 @@ public class UserName {
     String lastName = s.nextLine();
     System.out.print("What is your favorit number?");
     String favNum = s.nextLine();
+    System.out.print("Are you Student and Tercher?");
+    String role = s.nextLine();
     
 
     // test output
-    System.out.println("Hello " + initialize(firstName) + "." + initialize(lastName) + ".");
-    System.out.println(favNum);
+    if(role.equals("Student")) {
+    System.out.println("Hello " + firstName + "" + initialize(lastName) + "" + favNum + "@nycstudents.net");
+}
+    else {
+    System.out.println("Hello " + firstName + "" + initialize(lastName) + "" + favNum + "@schools.nyc.org" );
+}
 
     s.close();
   } // end main method
