@@ -12,15 +12,17 @@ public class UserName {
     String lastName = s.nextLine();
     System.out.print("What is your favorit number?");
     String favNum = s.nextLine();
-    System.out.print("Are you Student and Tercher?");
+    System.out.print("Are you Student and Teacher?");
     String role = s.nextLine();
     
 
     // test output
-    if(role.equals("Student")) {
+    role = role.toLowerCase();
+    
+    if(role.equals("student")) {
     System.out.println("Hello " + firstName + "" + initialize(lastName) + "" + favNum + "@nycstudents.net");
 }
-    else {
+    else if (role.equals("teacher")) {
     System.out.println("Hello " + initialize(firstName) + "" + lastName + "" + favNum + "@schools.nyc.org" );
 }
 
