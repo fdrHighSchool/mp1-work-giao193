@@ -18,10 +18,10 @@ public class UserName {
 
     // test output
     if(role.equals("Student")) {
-    System.out.println("Hello " + firstName + "" + initialize(lastName) + "" + favNum + "@nycstudents.net");
+    System.out.println("Hello " + firstName + "." + initialize(lastName) + "" + favNum + "@nycstudents.net");
 }
     else {
-    System.out.println("Hello " + firstName + "" + initialize(lastName) + "" + favNum + "@schools.nyc.org" );
+    System.out.println("Hello " + initialize(firstName) + "" + lastName + "" + favNum + "@schools.nyc.org" );
 }
 
     s.close();
