@@ -21,10 +21,10 @@ public class UserName {
     
     if(role.equals("student")) {
     System.out.println("Hello " + firstName + "" + initialize(lastName) + "" + favNum + "@nycstudents.net");
-}
+} // if
     else if (role.equals("teacher")) {
     System.out.println("Hello " + initialize(firstName) + "" + lastName + "" + favNum + "@schools.nyc.org" );
-}
+} // end else
 
     s.close();
   } // end main method
@@ -39,4 +39,5 @@ public class UserName {
     return n.substring(0, 1);
   } // end initialize method
 
+ 
 } // end class
