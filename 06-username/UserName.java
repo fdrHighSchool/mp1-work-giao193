@@ -16,6 +16,8 @@ public class UserName {
     String role = s.nextLine();
     
 
+    
+
     // test output
     role = role.toLowerCase();
     
@@ -26,7 +28,10 @@ public class UserName {
     System.out.println("Hello " + initialize(firstName) + "" + lastName + "" + favNum + "@schools.nyc.org" );
 } // end else
 
+    System.out.println(generatePassword(8));
+    
     s.close();
+
   } // end main method
 
   /*
@@ -38,6 +43,30 @@ public class UserName {
   public static String initialize(String n) {
     return n.substring(0, 1);
   } // end initialize method
+  
+  
 
- 
-} // end class
+  public static String generatePassword(int length) {
+     String password = "";
+    
+     for(int i = 0; i<length; i++){
+         //need a loop of len "length"
+         
+         //pull a random number from range (65-90 CAPS) (48-57 #s) (97-122 lower)
+         int min = 65;
+         int max = 90;
+         
+         int rand = (int)(Math.random() * (max - min + 1) + min);
+         // conxert int to char (c =(char)i;)
+         char c = (char)rand;
+         
+         // System.out.println(rand + " " + c);
+         
+         //append char to the String password (password = password + c) 
+         password = password + c;
+     }
+     return password;
+     
+    }
+   
+ }// end class
