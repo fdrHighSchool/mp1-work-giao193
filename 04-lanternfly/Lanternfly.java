@@ -21,6 +21,9 @@ public class Lanternfly
         if (num < 10) {
             System.out.println("You can do better than that!");
         } // end if statement
+        else if (num < 20) {
+            System.out.println("You did exclent job！");
+        } // end ellf statement
         else {
             System.out.println("Thanks for doing your part");
         } // end else statement
